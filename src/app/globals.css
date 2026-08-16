@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
+/*
+ * Palette — sage (green) family + clay/terracotta (warm earth) family,
+ * plus an ivory/cream neutral base (not in the original named palette,
+ * added because a site built only from mid-to-dark sage/terracotta tones
+ * has no light neutral to stay "épuré" against).
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-mist-sage: #eef1ea;
+  --color-soft-sage: #d7ded0;
+  --color-classic-sage: #a7b598;
+  --color-deep-sage: #748363;
+  --color-forest-sage: #414f35;
+
+  --color-sand-clay: #e8d2b0;
+  --color-warm-clay: #d3a874;
+  --color-terracotta: #c1703f;
+  --color-burnt-terracotta: #9c4f2c;
+  --color-rustic-earth: #6e3820;
+
+  --color-ivory: #fffdf8;
+  --color-cream: #fbf3e7;
+  --color-ink: #2a2521;
+
+  /* Muted gold accent — the "haut de gamme" signal color, used sparingly
+     for hairline borders, dividers, and small ornamental details. Desaturated
+     on purpose to stay in the same soft, editorial register as sage/terracotta. */
+  --color-soft-gold: #e8dcc0;
+  --color-muted-gold: #c9a75f;
+  --color-deep-gold: #9c7c3d;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-ink);
 }
 
+/* Tailwind v4 CSS-first theme: exposes semantic + raw palette utilities
+   (bg-primary, text-accent, border-mist-sage, etc). */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* raw palette, available as e.g. bg-classic-sage / text-terracotta */
+  --color-mist-sage: var(--color-mist-sage);
+  --color-soft-sage: var(--color-soft-sage);
+  --color-classic-sage: var(--color-classic-sage);
+  --color-deep-sage: var(--color-deep-sage);
+  --color-forest-sage: var(--color-forest-sage);
+  --color-sand-clay: var(--color-sand-clay);
+  --color-warm-clay: var(--color-warm-clay);
+  --color-terracotta: var(--color-terracotta);
+  --color-burnt-terracotta: var(--color-burnt-terracotta);
+  --color-rustic-earth: var(--color-rustic-earth);
+  --color-ivory: var(--color-ivory);
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+
+  /* semantic roles, e.g. bg-primary text-primary-foreground */
+  --color-primary: var(--color-classic-sage);
+  --color-primary-foreground: var(--color-ivory);
+  --color-secondary: var(--color-warm-clay);
+  --color-secondary-foreground: var(--color-ink);
+  --color-accent: var(--color-terracotta);
+  --color-accent-strong: var(--color-burnt-terracotta);
+  --color-accent-foreground: var(--color-ivory);
+  --color-muted: var(--color-mist-sage);
+  --color-muted-foreground: var(--color-deep-sage);
+  --color-border: color-mix(in srgb, var(--color-deep-sage) 25%, transparent);
+
+  /* gold accent roles — hairlines, ornamental borders, active indicators */
+  --color-soft-gold: var(--color-soft-gold);
+  --color-muted-gold: var(--color-muted-gold);
+  --color-deep-gold: var(--color-deep-gold);
+  --color-accent-gold: var(--color-muted-gold);
+  --color-border-gold: color-mix(in srgb, var(--color-muted-gold) 35%, transparent);
+
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+  --font-script: var(--font-script);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Gentle entrance for the hero content (heart, names, date, divider) — a
+   soft fade + rise, staggered via the [animation-delay:*] utility on each
+   element. Purely decorative "peps"; skipped entirely under
+   prefers-reduced-motion. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
 }

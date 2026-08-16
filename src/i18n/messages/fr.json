@@ -1,0 +1,122 @@
+{
+  "common": {
+    "siteTitle": "Laurine & Axandre",
+    "coupleNames": "Laurine & Axandre",
+    "weddingDateLong": "24 octobre 2026",
+    "tagline": "On se marie !",
+    "nav": {
+      "programme": "Programme",
+      "infosPratiques": "Infos pratiques",
+      "rsvp": "RSVP"
+    },
+    "languageNames": {
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "footer": {
+      "madeWith": "Avec amour, pour notre mariage.",
+      "logout": "Changer de code d'accès"
+    }
+  },
+  "gate": {
+    "kicker": "Accès invités",
+    "title": "Bienvenue",
+    "subtitle": "Entrez le code reçu avec votre invitation — c'est notre façon de vous réserver un accueil rien que pour vous.",
+    "codeLabel": "Code d'accès",
+    "codePlaceholder": "Votre code",
+    "submitButton": "Entrer",
+    "submitting": "Vérification…",
+    "errorInvalidCode": "Ce code n'est pas reconnu. Vérifiez votre invitation ou contactez-nous.",
+    "errorGeneric": "Une erreur est survenue, merci de réessayer."
+  },
+  "home": {
+    "heroDateIntro": "Nous nous marions le",
+    "countdown": {
+      "title": "Compte à rebours",
+      "days": "{count, plural, one {jour} other {jours}}",
+      "hours": "{count, plural, one {heure} other {heures}}",
+      "minutes": "{count, plural, one {minute} other {minutes}}",
+      "past": "Merci d'avoir célébré ce jour avec nous !"
+    },
+    "slider": {
+      "label": "Photos du couple",
+      "previous": "Photo précédente",
+      "next": "Photo suivante",
+      "pause": "Mettre en pause le diaporama",
+      "play": "Reprendre le diaporama",
+      "goToSlide": "Aller à la photo {number}"
+    },
+    "celebration": {
+      "title": "On a tellement hâte de fêter ça avec vous",
+      "subtitle": "Le {date}, on vous attend les bras grands ouverts — ce sera un jour qu'on n'oubliera jamais.",
+      "cta": "Je serai là !"
+    }
+  },
+  "deroule": {
+    "kicker": "Samedi 24 octobre 2026",
+    "title": "Le déroulé de la journée",
+    "subtitle": "Voici comment la journée va se dérouler — on a hâte de partager ces moments avec vous !",
+    "locations": {
+      "mairie": "Mairie de Colomiers",
+      "masTolosa": "Mas Tolosa"
+    },
+    "steps": {
+      "mairieDebut": "Cérémonie civile à la mairie",
+      "discours": "Discours de mariage",
+      "vinHonneurDebut": "Vin d'honneur",
+      "reception": "Réception"
+    }
+  },
+  "infosPratiques": {
+    "title": "Infos pratiques",
+    "subtitle": "Tout ce qu'il faut savoir pour nous rejoindre — et profiter de chaque instant.",
+    "venues": {
+      "mairieTitle": "Mairie de Colomiers",
+      "mairieAddress": "1 Place Alex Raymond, 31770 Colomiers",
+      "masTolosaTitle": "Mas Tolosa",
+      "masTolosaAddress": "79 Rue des Chênes, 31830 Plaisance-du-Touch",
+      "mapsButton": "Ouvrir dans Google Maps"
+    },
+    "zoom": {
+      "title": "Vous ne pouvez pas être des nôtres en personne ?",
+      "description": "Suivez la cérémonie civile et les discours en direct par Zoom.",
+      "button": "Rejoindre sur Zoom",
+      "unavailable": "Le lien Zoom sera communiqué prochainement."
+    },
+    "contacts": {
+      "title": "Une question, une envie d'animation ?",
+      "animations": {
+        "role": "Responsable des animations",
+        "name": "Aleck Vincent",
+        "note": "Pour proposer une animation, Aleck se fera un plaisir de vous aider."
+      },
+      "ceremonie": {
+        "role": "Maître de cérémonie",
+        "name": "Frédéric Benothmane",
+        "note": "Pour toute question, n'hésitez pas à contacter Frédéric"
+      }
+    }
+  },
+  "rsvp": {
+    "title": "Serez-vous des nôtres ?",
+    "subtitle": "Votre réponse nous aide beaucoup pour l'organisation. On a déjà hâte de vous voir !",
+    "fields": {
+      "nom": "Nom",
+      "prenom": "Prénom",
+      "presence": "Serez-vous présent·e ?",
+      "presenceOui": "Oui ❤️",
+      "presenceNon": "Non malheuresement ce ne sera pas possible 💔",
+      "nombrePersonnes": "Nombre de personnes (vous inclus·e)",
+      "message": "Un petit mot pour les mariés (facultatif)"
+    },
+    "submitButton": "Envoyer ma réponse",
+    "submitting": "Envoi en cours…",
+    "successTitle": "Merci !",
+    "successMessage": "Votre réponse a bien été envoyée. À très vite !",
+    "errorMessage": "Votre réponse n'a pas pu être envoyée. Merci de réessayer.",
+    "validation": {
+      "required": "Ce champ est requis.",
+      "nombrePersonnesMin": "Merci d'indiquer au moins une personne."
+    }
+  }
+}

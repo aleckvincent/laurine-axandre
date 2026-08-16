@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local-only source photos for the gallery upload script — never commit
+# raw photo files, only their Vercel Blob URLs (see gallery-manifest.ts)
+/gallery-photos
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

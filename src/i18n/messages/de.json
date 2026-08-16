@@ -1,0 +1,122 @@
+{
+  "common": {
+    "siteTitle": "Laurine & Axandre",
+    "coupleNames": "Laurine & Axandre",
+    "weddingDateLong": "24. Oktober 2026",
+    "tagline": "Wir heiraten!",
+    "nav": {
+      "programme": "Ablauf",
+      "infosPratiques": "Praktische Infos",
+      "rsvp": "Zusage"
+    },
+    "languageNames": {
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "footer": {
+      "madeWith": "Mit Liebe, für unsere Hochzeit.",
+      "logout": "Zugangscode wechseln"
+    }
+  },
+  "gate": {
+    "kicker": "Zugang für Gäste",
+    "title": "Willkommen",
+    "subtitle": "Gib den Code aus deiner Einladung ein — so halten wir diesen besonderen Tag nur für die Menschen, die uns am Herzen liegen.",
+    "codeLabel": "Zugangscode",
+    "codePlaceholder": "Dein Code",
+    "submitButton": "Eintreten",
+    "submitting": "Wird geprüft…",
+    "errorInvalidCode": "Dieser Code wird nicht erkannt. Bitte prüfe deine Einladung oder kontaktiere uns.",
+    "errorGeneric": "Etwas ist schiefgelaufen, bitte versuche es erneut."
+  },
+  "home": {
+    "heroDateIntro": "Wir heiraten am",
+    "countdown": {
+      "title": "Countdown",
+      "days": "{count, plural, one {Tag} other {Tage}}",
+      "hours": "{count, plural, one {Stunde} other {Stunden}}",
+      "minutes": "{count, plural, one {Minute} other {Minuten}}",
+      "past": "Danke, dass ihr diesen Tag mit uns gefeiert habt!"
+    },
+    "slider": {
+      "label": "Fotos des Paares",
+      "previous": "Vorheriges Foto",
+      "next": "Nächstes Foto",
+      "pause": "Diashow anhalten",
+      "play": "Diashow fortsetzen",
+      "goToSlide": "Zum Foto {number}"
+    },
+    "celebration": {
+      "title": "Wir können es kaum erwarten, mit dir zu feiern",
+      "subtitle": "Am {date} warten wir mit offenen Armen auf dich — es wird ein Tag, den wir alle nie vergessen werden.",
+      "cta": "Ich bin dabei!"
+    }
+  },
+  "deroule": {
+    "kicker": "Samstag, 24. Oktober 2026",
+    "title": "Der Ablauf des Tages",
+    "subtitle": "So wird der Tag ablaufen — wir haben alles geplant, damit du jeden Moment in vollen Zügen genießen kannst.",
+    "locations": {
+      "mairie": "Rathaus Colomiers",
+      "masTolosa": "Mas Tolosa"
+    },
+    "steps": {
+      "mairieDebut": "Standesamtliche Trauung im Rathaus",
+      "discours": "Hochzeitsreden",
+      "vinHonneurDebut": "Sektempfang",
+      "reception": "Empfang"
+    }
+  },
+  "infosPratiques": {
+    "title": "Praktische Infos",
+    "subtitle": "Alles, was du wissen musst, um entspannt bei uns anzukommen — und jeden Moment zu genießen.",
+    "venues": {
+      "mairieTitle": "Rathaus Colomiers",
+      "mairieAddress": "1 Place Alex Raymond, 31770 Colomiers, Frankreich",
+      "masTolosaTitle": "Mas Tolosa",
+      "masTolosaAddress": "79 Rue des Chênes, 31830 Plaisance-du-Touch, Frankreich",
+      "mapsButton": "In Google Maps öffnen"
+    },
+    "zoom": {
+      "title": "Kannst du nicht persönlich dabei sein?",
+      "description": "Verfolge die standesamtliche Trauung und die Reden live per Zoom.",
+      "button": "Zoom beitreten",
+      "unavailable": "Der Zoom-Link wird in Kürze bekannt gegeben."
+    },
+    "contacts": {
+      "title": "Eine Frage oder eine Idee für ein Programm-Highlight?",
+      "animations": {
+        "role": "Verantwortlicher für die Programmpunkte",
+        "name": "Aleck Vincent",
+        "note": "Um einen Programmpunkt vorzuschlagen, wende dich an ihn."
+      },
+      "ceremonie": {
+        "role": "Zeremonienmeister",
+        "name": "Frédéric Benothmane",
+        "note": "Bei Fragen wende dich an ihn."
+      }
+    }
+  },
+  "rsvp": {
+    "title": "Bist du dabei?",
+    "subtitle": "Deine Rückmeldung hilft uns bei der Planung — und wir freuen uns schon jetzt darauf, dich wiederzusehen!",
+    "fields": {
+      "nom": "Nachname",
+      "prenom": "Vorname",
+      "presence": "Wirst du dabei sein?",
+      "presenceOui": "Ja, sehr gerne",
+      "presenceNon": "Nein, ich kann leider nicht kommen",
+      "nombrePersonnes": "Anzahl der Personen (dich eingeschlossen)",
+      "message": "Eine Nachricht an das Brautpaar (optional)"
+    },
+    "submitButton": "Antwort senden",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Danke!",
+    "successMessage": "Deine Antwort wurde erfolgreich gesendet. Bis bald!",
+    "errorMessage": "Deine Antwort konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "validation": {
+      "required": "Dieses Feld ist erforderlich.",
+      "nombrePersonnesMin": "Bitte gib mindestens eine Person an."
+    }
+  }
+}
