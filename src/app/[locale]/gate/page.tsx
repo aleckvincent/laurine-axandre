@@ -17,7 +17,7 @@ export default async function GatePage({
   const common = await getTranslations("common");
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-mist-sage/40 via-ivory to-ivory px-5 py-16">
+    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-mist-sage/40 via-ivory to-ivory px-5 py-16">
       <PaisleyCorner className="absolute -left-6 -top-6 h-40 w-40 sm:h-56 sm:w-56" />
       <PaisleyCorner
         flip
