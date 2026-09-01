@@ -30,7 +30,7 @@
     "errorGeneric": "Etwas ist schiefgelaufen, bitte versuche es erneut."
   },
   "home": {
-    "heroDateIntro": "Wir heiraten am",
+    "heroDateIntro": "Laurine und Axandre haben die Freude, dich ihrer Hochzeitsfeier einzuladen, die stattfindet am",
     "countdown": {
       "title": "Countdown",
       "days": "{count, plural, one {Tag} other {Tage}}",

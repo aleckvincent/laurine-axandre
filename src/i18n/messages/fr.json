@@ -30,7 +30,7 @@
     "errorGeneric": "Une erreur est survenue, merci de réessayer."
   },
   "home": {
-    "heroDateIntro": "Nous nous marions le",
+    "heroDateIntro": "Laurine et Axandre ont le plaisir de vous inviter à célébrer leur mariage, qui aura lieu le",
     "countdown": {
       "title": "Compte à rebours",
       "days": "{count, plural, one {jour} other {jours}}",

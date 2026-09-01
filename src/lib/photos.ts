@@ -4,9 +4,9 @@ import heroImage from "@/assets/photos/hands-reaching-hero.jpg";
 import chateauDance from "@/assets/photos/chateau-dance.jpg";
 import fountainReclining from "@/assets/photos/fountain-reclining.jpg";
 import skyNearKiss from "@/assets/photos/sky-near-kiss.jpg";
-import forestEmbrace from "@/assets/photos/forest-embrace.jpg";
+import cheekToCheekEmbrace from "@/assets/photos/cheek-to-cheek-embrace.jpeg";
 import handNeckMacro from "@/assets/photos/hand-neck-macro.jpg";
-import skyEmbrace from "@/assets/photos/sky-embrace.jpg";
+import chateauProposal from "@/assets/photos/chateau-proposal.jpeg";
 import chateauCarry from "@/assets/photos/chateau-carry.jpg";
 import sunsetProfileEmbrace from "@/assets/photos/sunset-profile-embrace.jpg";
 
@@ -49,19 +49,19 @@ export const SLIDER_PHOTOS: SliderPhoto[] = [
     },
   },
   {
-    id: "forest-embrace",
-    src: forestEmbrace,
+    id: "cheek-to-cheek-embrace",
+    src: cheekToCheekEmbrace,
     alt: {
-      fr: "Laurine et Axandre joue contre joue, fond de forêt",
-      de: "Laurine und Axandre Wange an Wange, Waldhintergrund",
+      fr: "Laurine et Axandre joue contre joue, une fleur dans les cheveux",
+      de: "Laurine und Axandre Wange an Wange, eine Blüte im Haar",
     },
   },
   {
-    id: "sky-embrace",
-    src: skyEmbrace,
+    id: "chateau-proposal",
+    src: chateauProposal,
     alt: {
-      fr: "Laurine et Axandre enlacés contre le ciel",
-      de: "Laurine und Axandre umarmen sich vor dem Himmel",
+      fr: "Axandre demande Laurine en mariage devant le château",
+      de: "Axandre macht Laurine vor dem Schloss einen Antrag",
     },
   },
   {

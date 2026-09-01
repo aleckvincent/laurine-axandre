@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Jost, Alex_Brush } from "next/font/google";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { Alex_Brush, Jost, Playfair_Display } from "next/font/google";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -60,6 +60,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
+      data-scroll-behavior="smooth"
       className={`${heading.variable} ${body.variable} ${script.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background font-sans text-foreground">

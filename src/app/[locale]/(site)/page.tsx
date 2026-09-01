@@ -41,10 +41,12 @@ export default async function HomePage({
       <section className="relative min-h-[70vh] overflow-hidden sm:min-h-[80vh] lg:grid lg:min-h-0 lg:grid-cols-12 lg:items-center lg:gap-8 lg:overflow-visible lg:px-8 lg:py-24 xl:gap-10">
         <HeroCollage />
 
-        {/* Overlay for text legibility — only needed on mobile, where the
+        {
+          /* Overlay for text legibility — only needed on mobile, where the
             photo sits full-bleed behind the text; on desktop the photo
-            moves into its own collage column instead. */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/50 via-ink/30 to-ink/60 lg:hidden" />
+            moves into its own collage column instead. */
+        }
+        <div className="absolute inset-0 bg-linear-to-b from-ink/50 via-ink/30 to-ink/60 lg:hidden" />
 
         {/* Content */}
         <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-5 py-20 text-center sm:min-h-[80vh] sm:py-28 lg:order-1 lg:col-span-5 lg:min-h-0 lg:items-start lg:px-0 lg:py-0 lg:text-left">
@@ -101,11 +103,13 @@ export default async function HomePage({
           <div className="mt-12 grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
             <div className="flex flex-col">
               <DerouleList steps={steps} />
-              {/* Fills the empty space left under the shortened timeline
+              {
+                /* Fills the empty space left under the shortened timeline
                   once it's shorter than the slider beside it — desktop
                   only, since the columns stack on mobile and no gap exists
-                  there. */}
-              <div className="relative mx-auto mt-10 hidden aspect-[3/2] w-full max-w-md lg:block">
+                  there. */
+              }
+              <div className="relative mx-auto mt-10 hidden aspect-3/2 w-full max-w-md lg:block">
                 <Image
                   src={masTolosaVenueIllustration}
                   alt=""

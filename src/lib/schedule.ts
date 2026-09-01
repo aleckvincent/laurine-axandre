@@ -1,4 +1,4 @@
-import { TIER_RANK, type Tier } from "@/types/tier";
+import { type Tier, TIER_RANK } from "@/types/tier";
 
 export type ScheduleStep = {
   id: string;
@@ -9,10 +9,34 @@ export type ScheduleStep = {
 };
 
 export const SCHEDULE: ScheduleStep[] = [
-  { id: "mairie_debut", time: "14:00", labelKey: "mairieDebut", minTier: "mairie", location: "mairie" },
-  { id: "discours", time: "15:30", labelKey: "discours", minTier: "mairie", location: "masTolosa" },
-  { id: "vin_honneur_debut", time: "16:15", labelKey: "vinHonneurDebut", minTier: "vin_honneur", location: "masTolosa" },
-  { id: "reception", time: "17:30", labelKey: "reception", minTier: "complet", location: "masTolosa" },
+  {
+    id: "mairie_debut",
+    time: "14:00",
+    labelKey: "mairieDebut",
+    minTier: "mairie",
+    location: "mairie",
+  },
+  {
+    id: "discours",
+    time: "16:30",
+    labelKey: "discours",
+    minTier: "mairie",
+    location: "masTolosa",
+  },
+  {
+    id: "vin_honneur_debut",
+    time: "17:15",
+    labelKey: "vinHonneurDebut",
+    minTier: "vin_honneur",
+    location: "masTolosa",
+  },
+  {
+    id: "reception",
+    time: "19:00",
+    labelKey: "reception",
+    minTier: "complet",
+    location: "masTolosa",
+  },
 ];
 
 export function filterScheduleForTier(tier: Tier): ScheduleStep[] {
