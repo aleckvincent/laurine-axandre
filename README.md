@@ -20,7 +20,7 @@ cp .env.example .env.local   # puis remplir les valeurs, voir ci-dessous
 pnpm dev
 ```
 
-Le site tourne sur http://localhost:3000.
+Le site tourne sur <http://localhost:3000>.
 
 ### Variables d'environnement
 
@@ -34,13 +34,12 @@ openssl rand -base64 32
 
 ## Codes d'accès et paliers d'invitation
 
-Trois codes fixes, un par palier, définis en variables d'environnement (`ACCESS_CODE_MAIRIE`, `ACCESS_CODE_VIN_HONNEUR`, `ACCESS_CODE_COMPLET`). Les paliers sont **imbriqués** :
+Deux codes fixes, un par palier, définis en variables d'environnement (`ACCESS_CODE_VIN_HONNEUR`, `ACCESS_CODE_COMPLET`). Les paliers sont **imbriqués** :
 
-| Palier | Voit |
-|---|---|
-| `mairie` | Mairie + Cérémonie religieuse |
-| `vin_honneur` | + Vin d'honneur |
-| `complet` | + Soirée réception |
+| Palier        | Voit                              |
+|---------------|-----------------------------------|
+| `vin_honneur` | Mairie + Discours + Vin d'honneur |
+| `complet`     | + Réception (soirée)              |
 
 Le déroulé affiché ([`src/lib/schedule.ts`](src/lib/schedule.ts)) est filtré côté serveur selon le palier — jamais côté client uniquement.
 
@@ -63,11 +62,11 @@ Ces étapes nécessitent vos propres comptes — je ne peux pas les créer à vo
 4. Dans **Project Settings → Environment Variables**, ajouter toutes les variables de `.env.example` (Production *et* Preview).
 5. Dans l'onglet **Storage** du projet Vercel, créer un **Blob store** et le lier au projet — `BLOB_READ_WRITE_TOKEN` est alors injecté automatiquement.
 6. Déployer. Le site est disponible sur une URL `*.vercel.app` ; un nom de domaine personnalisé peut être attaché plus tard dans **Settings → Domains** sans rien changer au code.
-7. Vérifier les 3 codes d'accès et tester une soumission RSVP réelle avant de transmettre les codes aux invités.
+7. Vérifier les 2 codes d'accès et tester une soumission RSVP réelle avant de transmettre les codes aux invités.
 
 ## Structure du projet
 
-```
+```txt
 src/
 ├── app/[locale]/          # pages (App Router, routing localisé)
 │   ├── gate/               # saisie du code d'accès (publique)

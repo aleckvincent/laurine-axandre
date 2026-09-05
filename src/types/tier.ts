@@ -1,17 +1,23 @@
 /**
- * The three invitation tiers, strictly nested:
- * complet ⊇ vin_honneur ⊇ mairie
+ * The two invitation tiers, nested:
+ * complet ⊇ vin_honneur
+ *
+ * vin_honneur — mairie, speech, drinks reception
+ * complet — those plus the main evening reception
  */
-export type Tier = "mairie" | "vin_honneur" | "complet";
+export type Tier = "vin_honneur" | "complet";
 
 export const TIER_RANK: Record<Tier, number> = {
-  mairie: 0,
-  vin_honneur: 1,
-  complet: 2,
+  vin_honneur: 0,
+  complet: 1,
 };
+
+export function isTier(value: unknown): value is Tier {
+  return value === "vin_honneur" || value === "complet";
+}
 
 export function tierIncludes(tier: Tier, minTier: Tier): boolean {
   return TIER_RANK[tier] >= TIER_RANK[minTier];
 }
 
-export const TIERS: Tier[] = ["mairie", "vin_honneur", "complet"];
+export const TIERS: Tier[] = ["vin_honneur", "complet"];

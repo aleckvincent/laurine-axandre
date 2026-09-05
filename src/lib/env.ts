@@ -10,8 +10,10 @@ const optionalString = () =>
   );
 
 const serverEnvSchema = z.object({
-  SESSION_SECRET: z.string().min(16, "SESSION_SECRET must be at least 16 characters"),
-  ACCESS_CODE_MAIRIE: z.string().min(1),
+  SESSION_SECRET: z.string().min(
+    16,
+    "SESSION_SECRET must be at least 16 characters",
+  ),
   ACCESS_CODE_VIN_HONNEUR: z.string().min(1),
   ACCESS_CODE_COMPLET: z.string().min(1),
   RESEND_API_KEY: optionalString(),
