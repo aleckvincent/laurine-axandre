@@ -17,7 +17,6 @@ export function resolveTierFromCode(code: string): Tier | null {
   const map: Array<[Tier, string]> = [
     ["complet", env.ACCESS_CODE_COMPLET],
     ["vin_honneur", env.ACCESS_CODE_VIN_HONNEUR],
-    ["mairie", env.ACCESS_CODE_MAIRIE],
   ];
 
   for (const [tier, configuredCode] of map) {

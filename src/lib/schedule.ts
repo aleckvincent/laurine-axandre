@@ -13,14 +13,14 @@ export const SCHEDULE: ScheduleStep[] = [
     id: "mairie_debut",
     time: "14:00",
     labelKey: "mairieDebut",
-    minTier: "mairie",
+    minTier: "vin_honneur",
     location: "mairie",
   },
   {
     id: "discours",
     time: "16:30",
     labelKey: "discours",
-    minTier: "mairie",
+    minTier: "vin_honneur",
     location: "masTolosa",
   },
   {

@@ -1,7 +1,7 @@
 import "server-only";
-import { SignJWT, jwtVerify } from "jose";
+import { jwtVerify, SignJWT } from "jose";
 import { getServerEnv } from "@/lib/env";
-import type { Tier } from "@/types/tier";
+import { isTier, type Tier } from "@/types/tier";
 
 // Pure JWT sign/verify helpers — no `next/headers` import, so this module
 // is safe to use both in Server Actions/Components AND in Edge Middleware
@@ -26,7 +26,7 @@ export async function verifySessionToken(token: string): Promise<Tier | null> {
   try {
     const { payload } = await jwtVerify(token, getSecretKey());
     const tier = payload.tier;
-    if (tier === "mairie" || tier === "vin_honneur" || tier === "complet") {
+    if (isTier(tier)) {
       return tier;
     }
     return null;

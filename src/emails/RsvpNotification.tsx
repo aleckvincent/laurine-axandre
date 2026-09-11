@@ -23,9 +23,8 @@ export type RsvpNotificationProps = {
 };
 
 const TIER_LABELS: Record<Tier, string> = {
-  mairie: "Mairie / Cérémonie religieuse",
-  vin_honneur: "Mairie / Cérémonie religieuse / Vin d'honneur",
-  complet: "Complet (Mairie / Cérémonie / Vin d'honneur / Soirée)",
+  vin_honneur: "Mairie / Discours / Vin d'honneur",
+  complet: "Journée complète (Mairie / Discours / Vin d'honneur / Réception)",
 };
 
 export default function RsvpNotification({
@@ -42,9 +41,12 @@ export default function RsvpNotification({
     <Html>
       <Head />
       <Preview>
-        Nouvelle réponse RSVP — {prenom} {nom} ({presence === "oui" ? "présent·e" : "absent·e"})
+        Nouvelle réponse RSVP — {prenom} {nom}{" "}
+        ({presence === "oui" ? "présent·e" : "absent·e"})
       </Preview>
-      <Body style={{ backgroundColor: "#fffdf8", fontFamily: "Georgia, serif" }}>
+      <Body
+        style={{ backgroundColor: "#fffdf8", fontFamily: "Georgia, serif" }}
+      >
         <Container
           style={{
             margin: "0 auto",
@@ -59,7 +61,9 @@ export default function RsvpNotification({
             <strong>
               {prenom} {nom}
             </strong>{" "}
-            {presence === "oui" ? "sera présent·e ✅" : "ne pourra pas venir ❌"}
+            {presence === "oui"
+              ? "sera présent·e ✅"
+              : "ne pourra pas venir ❌"}
           </Text>
 
           <Hr style={{ borderColor: "#eef1ea", margin: "20px 0" }} />
@@ -71,7 +75,8 @@ export default function RsvpNotification({
               </Text>
             )}
             <Text style={{ color: "#2a2521", fontSize: "14px" }}>
-              Type d&apos;invitation : <strong>{tier ? TIER_LABELS[tier] : "inconnu"}</strong>
+              Type d&apos;invitation :{" "}
+              <strong>{tier ? TIER_LABELS[tier] : "inconnu"}</strong>
             </Text>
             <Text style={{ color: "#2a2521", fontSize: "14px" }}>
               Langue utilisée : <strong>{locale}</strong>
@@ -84,7 +89,9 @@ export default function RsvpNotification({
           {message && (
             <>
               <Hr style={{ borderColor: "#eef1ea", margin: "20px 0" }} />
-              <Text style={{ color: "#2a2521", fontSize: "14px" }}>Message :</Text>
+              <Text style={{ color: "#2a2521", fontSize: "14px" }}>
+                Message :
+              </Text>
               <Text
                 style={{
                   color: "#2a2521",
