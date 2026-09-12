@@ -16,22 +16,38 @@ export async function ZoomCta() {
       <h3 className="font-serif text-xl text-forest-sage">{t("title")}</h3>
       <p className="mt-2 text-sm text-muted-foreground">{t("description")}</p>
       <div className="mt-5">
-        {zoomUrl
-          ? (
-            <Button
-              as="a"
-              href={zoomUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("button")}
-            </Button>
-          )
-          : (
-            <p className="text-sm italic text-muted-foreground">
-              {t("unavailable")}
+        {zoomUrl ? (
+          <Button
+            as="a"
+            href={zoomUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("button")}
+          </Button>
+        ) : (
+          <p className="text-sm italic text-muted-foreground">
+            {t("unavailable")}
+          </p>
+        )}
+        <div className="mt-6 space-y-3 rounded-lg bg-white/50 p-4">
+          <div>
+            <p className="text-xs font-semibold text-forest-sage">
+              {t("meetingIdLabel")}
             </p>
-          )}
+            <p className="text-sm font-mono text-muted-foreground">
+              {t("meetingId")}
+            </p>
+          </div>
+          <div>
+            <p className="text-xs font-semibold text-forest-sage">
+              {t("passcodeLabel")}
+            </p>
+            <p className="text-sm font-mono text-muted-foreground">
+              {t("passcode")}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

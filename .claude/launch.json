@@ -4,7 +4,7 @@
     {
       "name": "wedding-dev",
       "runtimeExecutable": "/Users/aleck/.nvm/versions/node/v22.14.0/bin/node",
-      "runtimeArgs": ["/Users/aleck/Documents/laurine/code/node_modules/next/dist/bin/next", "start"],
+      "runtimeArgs": ["/Users/aleck/Documents/laurine/code/node_modules/next/dist/bin/next.js", "dev"],
       "port": 3000
     },
     {

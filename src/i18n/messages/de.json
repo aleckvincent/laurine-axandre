@@ -81,7 +81,11 @@
       "title": "Kannst du nicht persönlich dabei sein?",
       "description": "Verfolge die standesamtliche Trauung und die Reden live per Zoom.",
       "button": "Zoom beitreten",
-      "unavailable": "Der Zoom-Link wird in Kürze bekannt gegeben."
+      "unavailable": "Der Zoom-Link wird in Kürze bekannt gegeben.",
+      "meetingIdLabel": "Meetingkennung",
+      "meetingId": "815 2365 4490",
+      "passcodeLabel": "Zugangscode",
+      "passcode": "AxLaur26"
     },
     "contacts": {
       "title": "Eine Frage oder eine Idee für ein Programm-Highlight?",

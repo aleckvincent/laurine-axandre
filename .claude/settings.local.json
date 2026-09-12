@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pnpm -v)"
+      "Bash(pnpm -v)",
+      "Bash(/Users/aleck/.nvm/versions/node/v22.14.0/bin/node --version)",
+      "Bash(/Users/aleck/.nvm/versions/node/v22.14.0/bin/node /Users/aleck/.nvm/versions/node/v22.14.0/lib/node_modules/npm/bin/npm-cli.js run build)"
     ]
   }
 }

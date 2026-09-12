@@ -81,7 +81,11 @@
       "title": "Vous ne pouvez pas être des nôtres en personne ?",
       "description": "Suivez la cérémonie civile et les discours en direct par Zoom.",
       "button": "Rejoindre sur Zoom",
-      "unavailable": "Le lien Zoom sera communiqué prochainement."
+      "unavailable": "Le lien Zoom sera communiqué prochainement.",
+      "meetingIdLabel": "ID de réunion",
+      "meetingId": "815 2365 4490",
+      "passcodeLabel": "Code secret",
+      "passcode": "AxLaur26"
     },
     "contacts": {
       "title": "Une question, une envie d'animation ?",
